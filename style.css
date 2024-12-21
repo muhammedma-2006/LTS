@@ -1,84 +1,109 @@
-img{
-    width : 200px;
-    height: 200px ;
-    border-radius: 10px;
-}
-html{
+/* General Styles */
+html {
     scroll-behavior: smooth;
 }
+
 body {
-    
-    text-align: center ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
-    
-
-table, tr, th, td, caption {
-    border: 1px solid #000;
-    
-    border-collapse: collapse;
-    padding :0.5rem;
-    color: #000;
-   
-
-}
-table{
-    margin-left: 35%;
-}
-a,a:visited{
-    color : #000;
-    
+/* Image Styling */
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
 
-
-table {
-    margin: 0 0 0 35%;
-}
-
-
-h1{
+/* Typography */
+h1 {
     font-style: italic;
     color: #000;
 }
+
+/* Links */
+a, a:visited {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #df1313;
+}
+
+/* Navigation and Footer */
 nav, footer {
     text-align: left;
-}
-table{
-    text-align: center;
-}
-.link{
-    text-align: left;
+    padding: 1rem;
 }
 
-ul li{
-    display : inline-block;
-    padding : 40px;
-    text-align: center;
-    text-transform: capitalize;
-    /* margin-left: 40px; */
-}
-a{
-text-decoration: none;
-}
-
-a:hover{
-    color: #df1313 ;
-}
-footer p{
+footer p {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-caption{
-    font-weight: bolder;
+
+/* Table Styles */
+table, tr, th, td, caption {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    color: #000;
+    margin: 0 auto;
+    width: 90%; /* Default width for smaller screens */
 }
-@media (min-width:992px) {
-    table{
-        margin-left:43%;
+
+caption {
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+/* Navigation List Styling */
+ul li {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.link {
+    text-align: left;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    table {
+        width: 70%; /* Adjust width for medium screens */
     }
-    nav{
+
+    nav {
         text-align: center;
     }
-    
+}
+
+@media (min-width: 992px) {
+    table {
+        width: 60%; /* Adjust width for large screens */
+    }
+
+    nav {
+        text-align: center;
+    }
+}
+
+/* Responsive Footer Alignment */
+@media (max-width: 767px) {
+    footer p {
+        flex-direction: column;
+        padding: 1rem;
+    }
 }
