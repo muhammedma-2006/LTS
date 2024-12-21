@@ -1,0 +1,84 @@
+img{
+    width : 200px;
+    height: 200px ;
+    border-radius: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    
+    text-align: center ;
+}
+
+    
+
+table, tr, th, td, caption {
+    border: 1px solid #000;
+    
+    border-collapse: collapse;
+    padding :0.5rem;
+    color: #000;
+   
+
+}
+table{
+    margin-left: 35%;
+}
+a,a:visited{
+    color : #000;
+    
+}
+
+
+table {
+    margin: 0 0 0 35%;
+}
+
+
+h1{
+    font-style: italic;
+    color: #000;
+}
+nav, footer {
+    text-align: left;
+}
+table{
+    text-align: center;
+}
+.link{
+    text-align: left;
+}
+
+ul li{
+    display : inline-block;
+    padding : 40px;
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-left: 40px; */
+}
+a{
+text-decoration: none;
+}
+
+a:hover{
+    color: #df1313 ;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+caption{
+    font-weight: bolder;
+}
+@media (min-width:992px) {
+    table{
+        margin-left:43%;
+    }
+    nav{
+        text-align: center;
+    }
+    
+}
