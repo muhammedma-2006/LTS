@@ -1,129 +1,84 @@
-/* General Styles */
-img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+img{
+    width : 200px;
+    height: 200px ;
     border-radius: 10px;
 }
-
-html {
+html{
     scroll-behavior: smooth;
 }
-
 body {
-    text-align: center;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    
+    text-align: center ;
 }
+
+    
 
 table, tr, th, td, caption {
     border: 1px solid #000;
+    
     border-collapse: collapse;
-    padding: 0.5rem;
+    padding :0.5rem;
     color: #000;
-    text-align: center;
+   
+
 }
+table{
+    margin-left: 35%;
+}
+a,a:visited{
+    color : #000;
+    
+}
+
 
 table {
-    margin: 2rem auto;
-    width: 90%;
-    max-width: 600px;
+    margin: 0 0 0 35%;
 }
 
-caption {
-    font-weight: bolder;
-    margin-bottom: 0.5rem;
-}
 
-a, a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #df1313;
-}
-
-h1 {
+h1{
     font-style: italic;
     color: #000;
-    margin: 1rem 0;
 }
-
 nav, footer {
+    text-align: left;
+}
+table{
     text-align: center;
-    margin-bottom: 1rem;
+}
+.link{
+    text-align: left;
 }
 
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-ul li a {
+ul li{
+    display : inline-block;
+    padding : 40px;
+    text-align: center;
     text-transform: capitalize;
-    font-weight: bold;
-    font-size: 1rem;
+    /* margin-left: 40px; */
+}
+a{
+text-decoration: none;
 }
 
-.link {
-    display: inline-block;
-    margin: 1rem 0;
-    font-weight: bold;
-    color: #000;
+a:hover{
+    color: #df1313 ;
 }
-
-footer p {
-    margin: 1rem 0;
-    font-size: 0.9rem;
-    color: #333;
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    img {
-        max-width: 150px;
+caption{
+    font-weight: bolder;
+}
+@media (min-width:992px) {
+    table{
+        margin-left:43%;
     }
-
-    table {
-        width: 100%;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .link {
+    nav{
         text-align: center;
     }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    table {
-        font-size: 0.8rem;
-    }
-
-    caption {
-        font-size: 1rem;
-    }
-}
+    
+} 
