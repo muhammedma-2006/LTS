@@ -1,4 +1,11 @@
 /* General Styles */
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,104 +13,117 @@ html {
 body {
     text-align: center;
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
-/* Image Styling */
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-}
-
-/* Typography */
-h1 {
-    font-style: italic;
+table, tr, th, td, caption {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.5rem;
     color: #000;
+    text-align: center;
 }
 
-/* Links */
+table {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+caption {
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
 a, a:visited {
     color: #000;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 a:hover {
     color: #df1313;
 }
 
-/* Navigation and Footer */
-nav, footer {
-    text-align: left;
-    padding: 1rem;
-}
-
-footer p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* Table Styles */
-table, tr, th, td, caption {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 0.5rem;
+h1 {
+    font-style: italic;
     color: #000;
-    margin: 0 auto;
-    width: 90%; /* Default width for smaller screens */
+    margin: 1rem 0;
 }
 
-caption {
-    font-weight: bold;
-}
-
-table {
+nav, footer {
     text-align: center;
-    margin: 1rem auto;
+    margin-bottom: 1rem;
 }
 
-/* Navigation List Styling */
-ul li {
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
     display: inline-block;
-    padding: 1rem;
-    text-align: center;
+    margin: 0 15px;
+}
+
+ul li a {
     text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .link {
-    text-align: left;
+    display: inline-block;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #000;
 }
 
-/* Responsive Styling */
-@media (min-width: 768px) {
-    table {
-        width: 70%; /* Adjust width for medium screens */
+footer p {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    img {
+        max-width: 150px;
     }
 
-    nav {
+    table {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .link {
         text-align: center;
     }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
     table {
-        width: 60%; /* Adjust width for large screens */
+        font-size: 0.8rem;
     }
 
-    nav {
-        text-align: center;
-    }
-}
-
-/* Responsive Footer Alignment */
-@media (max-width: 767px) {
-    footer p {
-        flex-direction: column;
-        padding: 1rem;
+    caption {
+        font-size: 1rem;
     }
 }
